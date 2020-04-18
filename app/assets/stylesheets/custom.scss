@@ -1,0 +1,42 @@
+@import "bootstrap";
+
+
+// ヘッダー
+
+header{
+    overflow:hidden;
+    // position:fixed;
+    // width:100%;
+    // top:0;
+    // left:0
+    
+    .header-logo{
+        float:left;
+    }
+    .header-list{
+        float:right;
+    }
+}
+
+// home画面
+main{
+    .top-wrapper{
+    background-image:url("top-main-cover.jpg");
+    background-size:cover;
+    height:500px;
+    width:100%;
+    
+        h1{
+            text-align:center;
+            padding-top:150px;
+            padding-bottom:50px;
+        }
+        button{
+            display: inline-block;
+            text-align: center;
+            width:30%;
+        }
+    }
+    
+    
+}
