@@ -9,10 +9,22 @@ header{
     // width:100%;
     // top:0;
     // left:0
+    a{
+        text-decoration:none;
+        display:block;
+        
+        &:hover{
+            text-decoration: none
+          }
+        
+    }
     
     .header-logo{
         float:left;
+        
     }
+    
+    
     .header-list{
         float:right;
     }
@@ -36,7 +48,24 @@ main{
             text-align: center;
             width:30%;
         }
+        a{
+            display:block;
+            text-decoration:none;
+        }
     }
     
     
+}
+
+// signup ページ
+.signup-container{
+    background-image:url('signup.jpg');
+    background-size:cover;
+    width:100%;
+    padding:100px 0;
+    
+    .container{
+        width:70%;
+        border-radius:50px;
+    }
 }

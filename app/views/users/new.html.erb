@@ -1,0 +1,39 @@
+<div class="signup-container">
+    <div class="container bg-light">
+      <%= form_tag('/users/create') do %>
+        <form>
+          <h2 class="text-dark pt-5 text-center">新規登録</h2>
+          <% if @user.errors.any? %>
+            <div class="alert alert-danger" role="alert">
+              入力内容に不備があります。
+            </div>
+            <ul>
+              <% @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          <% end %>
+          <div class="form-group">
+            <label for="userName">ユーザー名</label>
+            <input type="text" name="name" class="form-control" id="userName"  placeholder="好きな名前を入れてください。">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">メールアドレス</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="あなたのメールアドレスを入力してください。">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">パスワード</label>
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="パスワードを入力してください。">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword2">パスワード確認</label>
+            <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword2" placeholder="もう一度、パスワードを入力してください。">
+          </div>
+          
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary mt-1 mb-5">上記内容で、登録をします</button>
+          </div>
+        </form>
+      <% end %>
+    </div>
+</div>
