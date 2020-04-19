@@ -24,9 +24,15 @@ header{
         
     }
     
-    
     .header-list{
         float:right;
+        a{
+            text-decoration:none;
+            
+            &:hover{
+            color:white;
+          }
+        }
     }
 }
 
@@ -49,8 +55,6 @@ main{
             width:30%;
         }
         a{
-            display:block;
-            text-decoration:none;
         }
     }
     
