@@ -26,10 +26,12 @@ header{
     
     .header-list{
         float:right;
+        
         a{
             text-decoration:none;
+            display: block;
             
-            &:hover{
+        &:hover{
             color:white;
           }
         }
@@ -50,11 +52,12 @@ main{
             padding-bottom:50px;
         }
         button{
-            display: inline-block;
+            display: block;
             text-align: center;
             width:30%;
         }
         a{
+            display: block;
         }
     }
     
